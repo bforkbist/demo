@@ -10,5 +10,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 14
+      - name: compile with java
+        run: javac Test.java
       - name: Run with java
-        run: java -cp java Test
+        run: java Test
